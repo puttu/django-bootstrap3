@@ -224,7 +224,7 @@ class FormRenderer(BaseRenderer):
         return ''
 
     def _render(self):
-        return self.render_errors() + self.render_fields()
+        return self.render_errors(type='non_fields') + self.render_fields()
 
 
 class FieldRenderer(BaseRenderer):
